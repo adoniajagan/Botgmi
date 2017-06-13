@@ -38,6 +38,13 @@ var fs = require("fs");
 
 
 var sql = require('mssql');
+// var con  = {
+    // server: '192.168.10.15\\MSSQL2012',
+    // database: 'BJAGAN',
+    // user: 'widgetuser',
+    // password: 'SA@1234'
+	
+// };
 var con  = {
     server: 'gmiinterview.database.windows.net',
     database: 'gmiinterview',
@@ -63,11 +70,7 @@ sql.connect(con, function (err) {
 });
 var fs = require('fs');
 var os = require('os');
-require(["Speech.Browser.Sdk"], function(SDK) {
-    // Now start using the SDK
-});
-//var path = require('path');
-//var client1 = require('../lib/client');
+
 
 if (!'cac0008c38034736b48aa300ff504d4e') {
   console.error('You need to set a MICROSOFT_BING_SPEECH_KEY env var');
